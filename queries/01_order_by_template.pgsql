@@ -13,6 +13,7 @@ ORDER BY length(title) DESC
 LIMIT 5;
 
 -- Finding the top 5 customers by rental count
+
 SELECT 
     c.customer_id, c.first_name, c.last_name,
     count(p.rental_id) as trx_count
@@ -24,6 +25,7 @@ ORDER BY count(p.rental_id) DESC
 LIMIT 5;
 
 -- Finding the top 5 customers by total spend
+
 SELECT 
     c.customer_id, c.first_name, c.last_name,
     SUM(p.amount) as total_spend
