@@ -1,0 +1,7 @@
+SELECT * 
+FROM film
+LIMIT 10;
+
+SELECT *
+FROM actor
+LIMIT 10;
